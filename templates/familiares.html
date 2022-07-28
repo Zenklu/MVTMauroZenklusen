@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Familiares</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="">
+            <i><span class="text-primary fs-5 fw-bold">Family.</span></i>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <i><a class="fs-6 nav-link active" aria-current="page" href="">Conocelos</a></i>
+            </li>
+            <i><a class="fs-6 nav-link active" aria-current="page" href="fecha_actual/">Hoy es..</a></i>
+            </ul>            
+                <i><a class="fs-6 fw-bold nav-link active" href="admin/">Admin</a></i>
+        </div>
+        </div>
+    </nav>
+
+<div class="container-fluid bg-dark">
+    <div class="row">
+            <div class="text-light">
+<br><p> El nombre de mi hermano es: {{ relative_1.name}}</p>
+<p> Su edad es: {{ relative_1.age }} años</p>
+<p> Su ocupación es: {{relative_1.ocupation}}</p>
+<p> Su fecha de nacimiento es: {{relative_1.born}}</p></br>
+<br><p> El nombre de mi papá es: {{ relative_2.name}} </p>
+<p> Su edad es: {{ relative_2.age }} años </p>
+<p> Su ocupación es: {{relative_2.ocupation}} </p>
+<p> Su fecha de nacimiento es: {{relative_2.born}} </p></br>
+<br><p> El nombre de mi novia es: {{ relative_3.name}} </p>
+<p> Su edad es: {{ relative_3.age }} años </p>
+<p> Su ocupación es: {{relative_3.ocupation}} </p>
+<p> Su fecha de nacimiento es: {{relative_3.born}} </p></br>
+<br><p> El nombre de mi hermana es: {{ relative_4.name}} </p>
+<p> Su edad es: {{ relative_4.age }} años </p>
+<p> Su ocupación es: {{relative_4.ocupation}} </p>
+<p> Su fecha de nacimiento es: {{relative_4.born}} </p></br>
+<br><p> El nombre de mi hermana es: {{ relative_5.name}} </p>
+<p> Su edad es: {{ relative_5.age }} años </p>
+<p> Su ocupación es: {{relative_5.ocupation}} </p>
+<p> Su fecha de nacimiento es: {{relative_5.born}} </p></br>
+<br><p> El nombre de mi mamá es: {{ relative_6.name}} </p>
+<p> Su edad es: {{ relative_6.age }} años </p>
+<p> Su ocupación es: {{relative_6.ocupation}} </p>
+<p> Su fecha de nacimiento es: {{relative_6.born}} </p></br>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
